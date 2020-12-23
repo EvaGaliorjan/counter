@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+  color:black;
+  font-size: 44px;
+  text-shadow: 2px 2px 5px red;
+  opacity: 80%;
+}
+.box {
+  background: linear-gradient(to left, #c9d6ff 0%, #E2E2E2 100%);
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+}
+button {
+  width: 90px;
+  height: 32px;
+  border:2px bold;
+}
+.number {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  margin: 8% 14% 10% 14%;
+  text-align: center;
+  display: inline-block;
+  font-size:22px;
+}
+.minus {
+  margin-left: 10%;
+  display: inline-block;
+  font-size: 22px;
+}
+.plus {
+  margin-right: 10%;
+  display: inline-block;
+  font-size: 22px;
+}
