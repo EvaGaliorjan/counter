@@ -1,20 +1,11 @@
+let plusButton = document.getElementById("plus");
 let minusButton = document.getElementById("minus");
 let number = document.getElementById("number");
-let plusButton = document.getElementById("plus");
 
 
+plusButton.textContent = "+";
 minusButton.textContent = "-";
 number.textContent = "5";
-plusButton.textContent = "+";
-
-
-const minus = function minusOne(event) {
-  let result = parseInt(number.textContent);
-  result--;
-  removeEventListener("click", minusOne);
-  number.textContent = result;
-  return result;
-};
 
 const plus = function plusOne(event) {
   let result = parseInt(number.textContent);
@@ -24,5 +15,14 @@ const plus = function plusOne(event) {
   return result;
 };
 
-minusButton.addEventListener("click", minus);
+const minus = function minusOne(event) {
+  let result = parseInt(number.textContent);
+  result--;
+  removeEventListener("click", minusOne);
+  number.textContent = result;
+  return result;
+};
+
+
 plusButton.addEventListener("click", plus);
+minusButton.addEventListener("click", minus);
